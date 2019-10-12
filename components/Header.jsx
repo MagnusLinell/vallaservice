@@ -1,5 +1,5 @@
-import styles from './Header.less';
 import Link from 'next/Link';
+import styles from './Header.less';
 
 export default () => {
     return (
