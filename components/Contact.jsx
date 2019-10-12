@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styles from './Contact.less';
 
 export default () => {
@@ -6,9 +7,9 @@ export default () => {
             <div className={styles.contact}>
                 <h1 className={styles.title}>Kontakt / Beställ</h1>
                 <div className={styles.row}>Ange produkt, antal skidor och lämningsdatum vid beställning. Upphämtning sker dagen efter.</div>
-                <div className={styles.row}>Telefon: <a href="tel:070-23 55 223">070-23 55 223</a></div>
-                <div className={styles.row}>Mail: <a href="mailto:vallaservice@vallaservice.com">vallaservice@vallaservice.com</a></div>
-                <div className={styles.row}>Adress: Kråkstigen 78, 19823 Falköping</div>
+                <div className={styles.row}><i className={classNames("fas", "fa-mobile", styles.icon)}></i>&nbsp;&nbsp;&nbsp;<a href="tel:070-23 55 223">070-23 55 223</a></div>
+                <div className={styles.row}><i className={classNames("fas", "fa-envelope", styles.icon)}></i> <a href="mailto:vallaservice@vallaservice.com">vallaservice@vallaservice.com</a></div>
+                <div className={styles.row}><i className={classNames("fas", "fa-home", styles.icon)}></i> Kråkstigen 78, 19823 Falköping</div>
             </div>
             <div className={styles.about}>
                 <h2 className={styles.title}>Om oss</h2>
