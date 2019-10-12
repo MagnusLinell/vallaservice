@@ -1,5 +1,6 @@
-import styles from './VallaserviceTable.less';
+import Link from 'next/link';
 import classNames from 'classnames';
+import styles from './VallaserviceTable.less';
 
 export default ({ className }) => {
     return (
@@ -26,7 +27,7 @@ export default ({ className }) => {
                     <td>799 kr</td>
                 </tr>
                 <tr>
-                    <td>Tävlingsvallning (Se Vasavallning)</td>
+                    <td>Tävlingsvallning (<Link href="/vasaloppet"><a>Se vasaloppet</a></Link>)</td>
                     <td>749 – 1599 kr</td>
                 </tr>
             </tbody>
