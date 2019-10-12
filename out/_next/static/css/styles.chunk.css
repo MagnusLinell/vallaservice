@@ -1,0 +1,105 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  background-color: #FFFFFF;
+  color: #1e272e;
+}
+h1 {
+  margin: 0;
+  font-size: 42px;
+}
+h2 {
+  margin: 0;
+  font-size: 32px;
+}
+h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 2;
+}
+h4 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+p {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header___11vNe {
+  background-color: #0fbcf9;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.brandName___3P9mZ {
+  font-size: 46px;
+}
+.nav___1p9ha {
+  display: flex;
+  align-items: center;
+}
+.link___tKEPj {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #1e272e;
+  font-weight: 700;
+}
+
+.main___7WsZU {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.maxWidth___3tbPA {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .maxWidth___3tbPA {
+    width: 800px;
+  }
+}
+
+.contact___1oJ6E {
+  margin-bottom: 20px;
+}
+.about___38Wwy {
+  margin-bottom: 20px;
+}
+.title___rtT0b {
+  margin-bottom: 20px;
+}
+
+
+.title___2x8JU {
+  margin-bottom: 20px;
+}
+.prices___2CdM5 {
+  margin-bottom: 20px;
+}
+
+
+.title___2YFXC {
+  margin-bottom: 20px;
+}
+.prices___1N2o2 {
+  margin-bottom: 20px;
+}
+
+
+.title___2Tiv1 {
+  margin-bottom: 20px;
+}
+
+.info___1of92 {
+  flex-basis: 50%;
+}
+.products___1ZTBz {
+  flex-basis: 50%;
+}
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
