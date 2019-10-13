@@ -11,13 +11,11 @@ export default ({ className }) => {
                     <th>Standard</th>
                     <th>Premium</th>
                     <th>Elit</th>
-                    <th>Elit+</th>
                 </tr>
             </thead>
             <tbody className={styles.tbody}>
                 <tr>
                     <td>Fästvallning</td>
-                    <td>X</td>
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
@@ -29,27 +27,16 @@ export default ({ className }) => {
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
-                    <td>X</td>
                 </tr>
                 <tr>
                     <td>Paraffin</td>
-                    <td>basic</td>
-                    <td>lågfluor</td>
-                    <td>högfluor</td>
-                    <td>högfluor</td>
-                    <td>högfluor</td>
+                    <td>X</td>
+                    <td>LF</td>
+                    <td>HF</td>
+                    <td>HF</td>
                 </tr>
                 <tr>
                     <td>Pulver</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>Kloss eller vätska/fluid</td>
-                    <td>-</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -63,7 +50,6 @@ export default ({ className }) => {
                     <td>599 kr</td>
                     <td>999 kr</td>
                     <td>1299 kr</td>
-                    <td>1499 kr</td>
                 </tr>
             </tfoot>
         </table >
