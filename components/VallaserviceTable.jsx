@@ -15,6 +15,14 @@ export default ({ className }) => {
                     <td>299 kr</td>
                 </tr>
                 <tr>
+                    <td>Glidvallning högfluor</td>
+                    <td>499 kr</td>	
+                </tr>
+                <tr>
+                    <td>Glidvallning Pulver</td>
+                    <td>749 kr</td>
+                </tr>
+                <tr>
                     <td>Rillning</td>
                     <td>150 kr</td>
                 </tr>
@@ -28,7 +36,7 @@ export default ({ className }) => {
                 </tr>
                 <tr>
                     <td>Tävlingsvallning (<Link href="/vasaloppet"><a>Se vasaloppet</a></Link>)</td>
-                    <td>749 – 1599 kr</td>
+                    <td>499 – 1299 kr</td>
                 </tr>
             </tbody>
         </table >

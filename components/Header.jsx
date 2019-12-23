@@ -1,16 +1,17 @@
-import Link from 'next/link';
+
 import classNames from 'classnames';
 import styles from './Header.less';
+import Link from './Link';
 
 export default () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <i className={classNames('fas', 'fa-skiing-nordic', styles.icon)}></i>
-                <Link href="/"><a className={styles.link}>Vallamannen</a></Link>
-                <Link href="/vasaloppet"><a className={styles.link}>Vasaloppet</a></Link>
-                <Link href="/vallaservice"><a className={styles.link}>Vallaservice</a></Link>
-                <Link href="/kontakt"><a className={styles.link}>Kontakt</a></Link>
+                <Link className={styles.link} href="/">Vallamannen</Link>
+                <Link className={styles.link} href="/vasaloppet">Vasaloppet</Link>
+                <Link className={styles.link} href="/vallaservice">Vallaservice</Link>
+                <Link className={styles.link} href="/kontakt">Kontakt</Link>
             </nav>
         </header>
     );

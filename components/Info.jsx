@@ -1,14 +1,15 @@
 import classNames from 'classnames';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import styles from './Info.less';
 
-export default ({ className }) => {
+export default ({ className, content }) => {
+    const {title, text} = content;
+    const htmlText = {__html: documentToHtmlString(text)};
     return (
         <div className={classNames(styles.info, className)}>
-            <h1 className={styles.title}>Vallamannen</h1>
-            <img className={styles.image} src="https://bildix.mmcloud.se/bildix/api/images/4dc6f4f963e07511609627caf7ef73ee8bd14d80.jpg?fit=crop&w=1200" alt="vallar skidor" />
-            <p>Vi har många års erfarenhet från vallning på olika nivåer. Spannet sträcker sig från glada motionärer till elitskidåkare i den absoluta eliten i både längdskidor och skidskytte. Vi har varit med och ”vallat hem” ett flertal Europa Cup, JVM och SM-medaljer genom åren.</p>
-            <p>Inför varje tävling registreras olika faktorer som indikerar val av produkter och slipar. Sen testas de olika produkterna för att hitta de produkter som är absolut bäst lämpad för aktuellt före. Vi har ett väl inarbetat system som vi arbetar mot och det har lett till ett flertal Europa Cup medaljer, JVM-medaljer och SM-medaljer genom åren.</p>
-            <p>Vi finns på plats under hela vasaloppsveckan och vallar inför alla tävlingar: Boka redan idag!</p>
+            <h1 className={styles.title}>{title}</h1>
+            <img className={styles.image} src="https://images.ctfassets.net/5vatiodyxqrj/3IGWsrNw2IYK2VCRd6TILY/637cc5e50c60beaf2cac9dd32cc22f8f/76688987_415513609375544_3464621771175493632_n.jpg" alt="vallar skidor" />
+            <div dangerouslySetInnerHTML={htmlText} />
         </div>
     );
 }
