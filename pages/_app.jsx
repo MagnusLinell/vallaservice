@@ -7,6 +7,9 @@ import Fingerprint2 from 'fingerprintjs2';
 
 class MyApp extends App {
     componentDidMount() {
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js").catch(err => console.error("Service worker registration failed", err));
+        }
         Fingerprint2.getV18((clientId) => {
             ga('create', 'UA-155190132-1', {
                 'storage': 'none',

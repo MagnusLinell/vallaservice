@@ -18,5 +18,8 @@
 	"orientation": "natural",
 	"background_color": "#d2dae2",
 	"theme_color": "#1e272e",
-	"lang": "sv-SE"
+	"lang": "sv-SE",
+	"serviceworker": {
+		"src": "/service-worker.js"
+	}
 }
