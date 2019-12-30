@@ -47,10 +47,10 @@ export default ({ className }) => {
                 <tfoot className={styles.tfoot}>
                     <tr>
                         <td></td>
-                        <td>499 kr</td>
-                        <td>599 kr</td>
-                        <td>999 kr</td>
-                        <td>1299 kr</td>
+                        <td>499 kr*</td>
+                        <td>599 kr*</td>
+                        <td>999 kr*</td>
+                        <td>1299 kr*</td>
                     </tr>
                 </tfoot>
             </table>
