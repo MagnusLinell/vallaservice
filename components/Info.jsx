@@ -8,8 +8,10 @@ export default ({ className, content }) => {
     return (
         <div className={classNames(styles.info, className)}>
             <h1 className={styles.title}>{title}</h1>
-            <img className={styles.image} src="https://images.ctfassets.net/5vatiodyxqrj/3IGWsrNw2IYK2VCRd6TILY/637cc5e50c60beaf2cac9dd32cc22f8f/76688987_415513609375544_3464621771175493632_n.jpg" alt="vallar skidor" />
-            <div dangerouslySetInnerHTML={htmlText} />
+            <div className={styles.layout}>
+                <img className={styles.image} src="https://images.ctfassets.net/5vatiodyxqrj/3IGWsrNw2IYK2VCRd6TILY/637cc5e50c60beaf2cac9dd32cc22f8f/76688987_415513609375544_3464621771175493632_n.jpg" alt="vallar skidor" />
+                <div dangerouslySetInnerHTML={htmlText} />
+            </div>
         </div>
     );
 }
