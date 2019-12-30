@@ -15,10 +15,19 @@
 .nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: 600px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .link {
-    margin-left: 20px;
+    width: 100%;
+    text-align: center;
+    @media (min-width: 600px) {
+        margin-left: 20px;
+        width: auto;
+    }
 }
 
 .icon {
