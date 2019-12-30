@@ -4,6 +4,7 @@ import Main from '../components/Main';
 import Contact from '../components/Contact';
 import styles from './kontakt.less';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 export default () => {
     const [content, setContent] = useState({});
@@ -18,6 +19,12 @@ export default () => {
     }, []);
     return (
         <>
+            <Head lang="sv_SE">
+                <title>{content.seoTitle}</title>
+                <meta name="description" content={content.seoDescription} />
+                <meta name="og:title" property="og:title" content={content.seoTitle} />
+                <meta name="og:description" property="og:description" content={content.seoDescription} />
+            </Head>
             <Header content={content} />
             <Main>
                 <Contact content={content} />
