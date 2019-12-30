@@ -30,13 +30,13 @@ class MyApp extends App {
                     <meta name="robots" content="index, follow" />
                     <link href="/" rel="canonical" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1" />
-                    <meta property="og:site_name" content="Vallaservice" />
+                    <meta property="og:site_name" content="Svensk Vallaservice" />
                     <meta name="theme-color" content="#ffd32a" />
-                    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico" />
-                    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
-                    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-                    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
-                    <link rel="manifest" href="/static/manifest.webmanifest" />
+                    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                    <link rel="manifest" href="/manifest.webmanifest" />
                     <meta charSet="utf-8" />
 
                     <script async src="https://www.googletagmanager.com/gtag/js?id=[ID]"></script>
