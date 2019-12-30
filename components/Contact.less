@@ -21,3 +21,20 @@
 .icon {
     margin-right: 10px;
 }
+
+.image {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 820px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
