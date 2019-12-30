@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export && cp _redirects out/.",
+    "build": "next build && next export",
     "start": "serve ./out",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
