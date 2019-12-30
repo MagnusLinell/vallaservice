@@ -44,12 +44,10 @@ class MyApp extends App {
 
                     <script async dangerouslySetInnerHTML={this.setGoogleTags()} />
 
-                    <link
-                        rel="stylesheet"
-                        type="text/css"
-                        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+                    <link 
+                        href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
                         lazyload="true"
-                    />
+                        rel="stylesheet" />
                     <link
                         rel="stylesheet"
                         type="text/css"
