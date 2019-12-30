@@ -19,14 +19,13 @@ class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
 
-
         return (
             <>
                 <Head>
-                    <title>Vallaservice</title>
-                    <meta name="description" content="Vallaservice" />
-                    <meta name="og:title" property="og:title" content="Vallaservice" />
-                    <meta name="og:description" property="og:description" content="Vallaservice" />
+                    <title>Svensk Vallaservice</title>
+                    <meta name="description" content="Svensk Vallaservice" />
+                    <meta name="og:title" property="og:title" content="Svensk Vallaservice" />
+                    <meta name="og:description" property="og:description" content="Svensk Vallaservice" />
                     <meta name="og:type" property="og:type" content="website" />
                     <meta name="robots" content="index, follow" />
                     <link href="/" rel="canonical" />
