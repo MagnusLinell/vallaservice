@@ -5,6 +5,7 @@ import VallaService from '../components/Vallaservice';
 import styles from './vallaservice.less';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import fetch from 'isomorphic-unfetch';
 
 const VallaServicePage = ({ content }) => {
     return (

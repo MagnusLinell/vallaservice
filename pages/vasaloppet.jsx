@@ -5,6 +5,7 @@ import Products from '../components/Products';
 import styles from './vasaloppet.less';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import fetch from 'isomorphic-unfetch';
 
 const Vasaloppet = ({ content }) => {
     return (

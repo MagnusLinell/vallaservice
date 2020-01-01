@@ -5,6 +5,7 @@ import Contact from '../components/Contact';
 import styles from './kontakt.less';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import fetch from 'isomorphic-unfetch';
 
 const Kontakt = ({ content }) => {
     return (
