@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Header from '../components/Header';
 import Main from '../components/Main';
@@ -7,18 +7,7 @@ import styles from './index.less';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 
-export default () => {
-    const [content, setContent] = useState({});
-
-    useEffect(() => {
-        const fetchContent = async () => {
-            const result = await fetch('https://cdn.contentful.com/spaces/5vatiodyxqrj/environments/master/entries/2wPepcwYm7BUqZ6J8Xqf0t?access_token=nwN0wAJQLFgiBlhIM424UXLSh5InOLySILhmmR8dhWE');
-            const body = await result.json();
-            setContent(body.fields);
-        };
-        fetchContent();
-    }, []);
-
+const Index = ({ content }) => {
     return (
         <>
             <Head lang="sv_SE">
@@ -35,3 +24,11 @@ export default () => {
         </>
     );
 }
+
+Index.getInitialProps = async () => {
+    const result = await fetch('https://cdn.contentful.com/spaces/5vatiodyxqrj/environments/master/entries/2wPepcwYm7BUqZ6J8Xqf0t?access_token=nwN0wAJQLFgiBlhIM424UXLSh5InOLySILhmmR8dhWE');
+    const body = await result.json();
+    return { content: body.fields }
+};
+
+export default Index;
