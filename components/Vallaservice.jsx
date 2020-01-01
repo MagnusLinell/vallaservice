@@ -10,7 +10,7 @@ export default ({ className, content }) => {
         <div className={classNames(styles.products, className)}>
             <h1 className={styles.title}>{title}</h1>
             <div className={styles.layout}>
-                <img className={styles.image} src="//images.ctfassets.net/5vatiodyxqrj/1NOlVRCnORbGNDFyRyZtm8/cbb9e402df83c570b746fd0f8b6f051a/74238112_413188419362118_7347536798219763712_n.jpg" alt="skidor i rad" />
+                <img className={styles.image} src="//images.ctfassets.net/5vatiodyxqrj/1NOlVRCnORbGNDFyRyZtm8/cbb9e402df83c570b746fd0f8b6f051a/74238112_413188419362118_7347536798219763712_n.jpg?fm=webp" alt="skidor i rad" />
                 <div>
                     <VallaserviceTable className={styles.prices} />
                     <div className={styles.smallFont} dangerouslySetInnerHTML={htmlText} />
